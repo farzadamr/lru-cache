@@ -24,13 +24,13 @@ Switch backend by passing lru.ActorBackend to New().
 go test -race -v
 
 # Run benchmarks (memory allocation included)
-go test -bench=. -benchmem
+go test -bench="^Benchmark" -benchmem
 ```
 Example output:
 
 ```text
-BenchmarkMutexSet-8     5000000    287 ns/op    48 B/op    1 allocs/op
-BenchmarkActorSet-8     2000000    615 ns/op   112 B/op    3 allocs/op
+BenchmarkMutexSet-12    3529717     359.4 ns/op     102 B/op        4 allocs/op
+BenchmarkActorSet-12    2213468     530.2 ns/op     40 B/op         3 allocs/op
 ```
 
 ## TODO:
