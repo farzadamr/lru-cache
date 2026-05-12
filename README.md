@@ -1,4 +1,4 @@
-# go-lru-cache
+# lru-cache
 
 A thread-safe LRU (Least Recently Used) cache library written in Go, featuring two concurrency backends: **Mutex** (`sync.RWMutex`) and **Actor** (goroutine + channels). Ideal for learning concurrency patterns in Go or using as a production‑ready cache.
 
